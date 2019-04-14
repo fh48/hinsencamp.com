@@ -319,7 +319,7 @@ Here you see how we use the methods and computed values to implement one of our 
 
 In case you get stuck or something just looks wrong, checkout the `03_ArrowButton` branch. If everything worked out though, your carousel should look like the following:
 
-![arrowGirf](ArrowMethodsSmall.gif)
+![arrowGirf](arrow-methods-small.gif)
 
 ## Let's build Indicators!
 
