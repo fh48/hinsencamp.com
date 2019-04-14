@@ -6,7 +6,7 @@
     "redirects": [
       {
         "source": "/article/how-to-design-and-build-a-carousel-in-VueJS/",
-        "destination": "/article/vuejs-carousel/",
+        "destination": "/article/vue-js-carousel/",
         "type": 301
       },
 
