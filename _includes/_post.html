@@ -3,10 +3,12 @@
     <div class="col-md-4">
       <a
         href="{{ post.url }}"
-        class="rounded c-img-post"
-        style="background-image: url('/article/{{ post.slug }}/{{
+        class="card-img card-img-left"
+        style="
+        background-image: url('/article/{{ post.slug }}/{{
           post.header_image
-        }}');"
+        }}');
+        "
       >
         <span class="sr-only">{{ post.title }}</span>
         <span class="c-post-categories ml-2">
