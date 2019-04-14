@@ -92,4 +92,28 @@ $carousel-control-width: 6%;
 @import "misc";
 
 // Nothing else
-// Pay 10 Euros if you commit sth. here
+
+// modify bootstrap styles;
+
+.card {
+  border: 1px solid #e5e8ed;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+  transition: box-shadow 0.25s linear;
+
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 5rem;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(3, 27, 78, 0.1);
+    color: rgba(3, 27, 78, 0.7);
+  }
+}

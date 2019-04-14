@@ -6,8 +6,6 @@ published_at: 2019-04-14 15:06:30.486476
 categories: [vueJS, frontend]
 ---
 
-# How to design and build a carousel in VueJS
-
 A carousel, slideshow, or slider - however you call it this class of UI - has become one of the core elements used in modern web development. Today, it's almost impossible to find any Website or UI library which doesn't come with one or another kind of carousel.
 
 Why, though? In fact, carousels really deserve their popularity. They allow users to skim through available content without vertical scrolling or heavy mouse movements. Consequently, users save time and can focus on the displayed content as Carousels keep cognitive load to a minimum.
@@ -21,17 +19,22 @@ You also don't need any prior experience with VueJS or Progressive Web Apps for 
 
 You find the full code here:
 
-https://github.com/fh48/vue-pwa-carousel
+[Github Repo](https://github.com/fh48/vue-pwa-carousel)
 
-**What's our Vision for the Carousel?**
+## What's our Vision?
+
+![carousel-vision](carousel-vision.png)
 
 First thing we will do is to get an overview over what kind of components we want to build.
 
 There are a few very straightforward ones:
 
 **Card** - It holds the information of each carousel element.
+
 **Carousel** - Parent which holds all logic
+
 **ArrowButton** - Helps to navigate between multiple cards.
+
 **Indicator** - Shows the number of cards and which is currently visible.
 
 ## Initial Setup
@@ -176,7 +179,7 @@ What a fantastic result! Especially, since we can already dynamically change wha
 Next, we build the Carousel to have a dedicated component to manage all logic around showing different Cards based on user inputs.
 Check out the branch `01_Card` to if you want to start from here or compare your implementation.
 
-## Let's build the Carousel
+## Let's build the Carousel!
 
 The Carousel will be our reusable parent component. It will encapsulate all relevant components and logic.
 
@@ -241,7 +244,7 @@ Now we only need to replace the **Card** with the **Carousel** in our `App.vue` 
 That's our basic implementation. It is not quite a Carousel yet but we are about to change this by adding the arrow buttons to switch between the objects we pass in the cards array to our **Carousel**.
 Check out the `02_Carousel` to see the complete code for this section. If you coded along you should see the following in front of you.
 
-## Let's build the ArrowButton
+## Let's build the ArrowButton!
 
 ![arrows](arrows.png)
 
@@ -389,7 +392,7 @@ export default {
 When we add the Indicators to `Carousel.vue` it becomes clear why we created two wrappers for the **Card**. Semantic and clear HTML is vital, especially for large projects with a high level of complexity.
 You can check out the complete code at branch `04_Indicators`.
 
-## Let's add Swipe
+## Let's add Swipe!
 
 Last but not least, we make our **Carousel** mobile friendly. A good progressive web app doesn't start by caching static files, but with responsiveness.
 
