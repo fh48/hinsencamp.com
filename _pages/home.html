@@ -1,57 +1,88 @@
 ---
 layout: base
 <!-- header: light -->
-title: Die deutsche Community zum Thema React
-description: Alles rund um React/JavaScript auf deutsch - Tutorials · Artikel · News · Schulungen.
+title: The personal blog of Fabian Hinsenkamp
+description: All about Software Development, VuejS and Progressive Web Apps
 permalink: /
 ---
 
 <div class="header header-homepage d-flex align-items-center mb-6">
-  <div class="container">
+
+    <div class="container d-flex">
+    <div class="col-12 col-sm-12">
+      <h1 class="header-homepage-title">Hinsencamp</h1>
+      <p class="mt-sm-2 pt-sm-2 mt-md-3 pt-md-3 h3">
+        Learn all about VueJS, PWAs and Software Engineering
+      </p>
+    </div>
+    <!-- <div class="col-6 col-sm-6">
+        <img
+        class="img-fluid "
+        alt="Fabian Hinsenkamp Image"
+        src="/assets/img/FabianHinsenkampNoBG.png"
+      />
+    </div> -->
+  </div>
+
+
+  <!-- <div class="container">
     <div class="row justify-content-md-center">
-      <div class="col-12 col-sm-3  text-center">
-        <img class="img-fluid c-img-rotation" alt="ReactJS.DE Logo"
-              src="/assets/img/atom-sign-alt.svg">
+      <div class="col-12 col-sm-3 text-center">
+        <img
+          class="img-fluid "
+          alt="Fabian Hinsenkamp Image"
+          src="/assets/img/FabianHinsenkampNoBG.png"
+        />
       </div>
       <div class="col-sm-7 pt-3">
         <div class="pl-lg-4 mr-lg-4 text-center text-sm-left">
-          <h1 class="header-homepage-title">ReactJS.DE</h1>
+          <h1 class="header-homepage-title">hinsencamp.com</h1>
           <p class="mt-sm-2 pt-sm-2 mt-md-3 pt-md-3 h3">
-            <a href="/artikel/">Artikel</a>
+            The personal blog of Fabian Hinsenkamp
+            <a href="/article/">article</a>
             <span class="ml-1 mr-1">•</span>
-            <a href="/schulungen/react-intensiv/">Schulungen</a>
+          <a href="/schulungen/react-intensiv/">Schulungen</a>
           </p>
-          <br>
-          <br>
+          <br />
+          <br />
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <main role="main">
-  <div class="container mb-6">
-    <h2>Hier starten! - Tutorials für Einsteiger</h2>
-    <div class="row mb-4">
-      {% for post in site.categories.tutorial limit:2 %}
-        <div class="col-sm-6 col-md-4 col-lg-6 mb-4">
-          {% include _post_card.html %}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <section class="py-5">
     <div class="container">
-      <h2>Die neusten Artikel</h2>
-      <div class="row">
-        {% for post in site.posts limit:6 %}
+        <h2>Recent Articles</h2>
+        <div class="row">
+          {% for post in site.posts limit:6 %}
           <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
             {% include _post_card.html %}
           </div>
+          {% endfor %}
+        </div>
+      </div>
+  <!-- <div class="container mb-6">
+    <h2>Hier starten! - Tutorials für Einsteiger</h2>
+    <div class="row mb-4">
+      {% for post in site.categories.tutorial limit:2 %}
+      <div class="col-sm-6 col-md-4 col-lg-6 mb-4">
+        {% include _post_card.html %}
+      </div>
+      {% endfor %}
+    </div> -->
+  </div>
+
+  <!-- <section class="py-5">
+    <div class="container">
+      <h2>Newest Articles</h2>
+      <div class="row">
+        {% for post in site.posts limit:6 %}
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+          {% include _post_card.html %}
+        </div>
         {% endfor %}
       </div>
     </div>
-  </section>
-
+  </section> -->
 </main>

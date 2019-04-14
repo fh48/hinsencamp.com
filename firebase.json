@@ -2,90 +2,17 @@
   "hosting": {
     "public": "_site",
     "cleanUrls": true,
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
-        "source": "/artikel/react-und-babel-mit-es6-und-es7/",
-        "destination": "/artikel/react-babel/",
+        "source": "/article/how-to-design-and-build-a-carousel-in-VueJS/",
+        "destination": "/article/vuejs-carousel/",
         "type": 301
       },
-      {
-        "source": "/artikel/vdom-rect/",
-        "destination": "/artikel/vdom-react/",
-        "type": 301
-      },
-      {
-        "source": "/artikel/backbone-chaplin-und-react/",
-        "destination": "/artikel/backbone-chaplin-react/",
-        "type": 301
-      },
-      {
-        "source": "/artikel/internationalisierung-react/",
-        "destination": "/artikel/react-i18n/",
-        "type": 301
-      },
-      {
-        "source": "/posts/wie-wahlt-man-die-beste-flux-implementierung",
-        "destination": "/artikel/flux-implementierung-auswaehlen/",
-        "type": 301
-      },
-      {
-        "source": "/posts/die-flux-architektur-und-react",
-        "destination": "/artikel/react-flux-architektur/",
-        "type": 301
-      },
-      {
-        "source": "/artikel/reactjs-typescript/",
-        "destination": "/artikel/react-typescript/",
-        "type": 301
-      },
-      {
-        "source": "/artikel/virtuelles-dom-mit-react-js/",
-        "destination": "/artikel/vdom-react/",
-        "type": 301
-      },
-      {
-        "source": "/posts/virtuelles-dom-mit-react-js",
-        "destination": "/artikel/vdom-react/",
-        "type": 301
-      },
-      {
-        "source": "/posts/javascript-module-eine-einleitung",
-        "destination": "/artikel/javascript-module-einleitung/",
-        "type": 301
-      },
-      {
-        "source": "/posts/react-tutorial",
-        "destination": "/artikel/react-tutorial-deutsch/",
-        "type": 301
-      },
-      {
-        "source": "/posts/react-anwendungen-mit-webpack-entwickeln/",
-        "destination": "/artikel/react-webpack",
-        "type": 301
-      },
-      {
-        "source": "/posts/Interview-Reactive-2015-Andre-Staltz",
-        "destination": "/artikel/interview-andre-staltz/",
-        "type": 301
-      },
-      {
-        "source": "/posts/Interview-Mark-Dalgleish-Reactive-2015",
-        "destination": "/artikel/interview-mark-dalgleish/",
-        "type": 301
-      },
-      {
-        "source": "/posts/reacteurope-summary",
-        "destination": "/artikel/reacteurope-2015/",
-        "type": 301
-      },
+
       {
         "source": "/posts/:id*",
-        "destination": "/artikel/:id/",
+        "destination": "/article/:id/",
         "type": 301
       },
       {

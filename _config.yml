@@ -1,11 +1,11 @@
-title: ReactJS.DE
+title: Hinsencamp
 description: ""
-url: "https://reactjs.de"
+url: "https://hinsencamp.com"
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 ga_property: "UA-97181121-5"
-permalink: /artikel/:slug/
-repository_url: "https://github.com/symetics/reactjs.de"
+permalink: /article/:slug/
+repository_url: "https://github.com/fh48/reactjs.de"
 ws_course_id: 17
 
 collections:
@@ -21,9 +21,9 @@ defaults:
       header_image: "header.jpg"
       toc: true
   - scope:
-      path:            "_posts/**/*.html"
+      path: "_posts/**/*.html"
     values:
-      sitemap:         false
+      sitemap: false
   - scope:
       path: "_pages" # an empty string here means all files in the project
     values:
@@ -32,10 +32,10 @@ defaults:
 pagination:
   enabled: true
   per_page: 5
-  permalink: '/seite/:num/'
-  title: ':title - Seite :num von :max'
+  permalink: "/page/:num/"
+  title: ":title - page :num von :max"
   limit: 0
-  sort_field: 'date'
+  sort_field: "date"
   sort_reverse: true
 
 # Build settings
@@ -55,7 +55,6 @@ exclude:
   - nginx.conf
   - cloudbuild.yaml
   - firebase-debug.log
-
 # webrick:
 #   headers:
 #     Content-Security-Policy: "style-src 'self'"

@@ -1,37 +1,53 @@
 ---
 ---
+
 // 🔝 those lines above are needed by jekyll
 
 // General
 $enable-shadows: true;
 
 // Font / Typographie
-$font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
 $font-size-base: 1.1rem;
 $line-height-base: 1.618;
 
 // Theme Colors
-$primary:#709cde; // #4eafca
-$success:#43ac6a;
-$warning:#e99002;
+$primary: #709cde; // #4eafca
+$success: #43ac6a;
+$warning: #e99002;
 $danger: #f04124;
-$info: #61DAFB;
-$black:  #000;
-$white:  #fff;
-$yiq-contrasted-threshold:  195;
+$info: #61dafb;
+$black: #000;
+$white: #fff;
+$vue-dark: #435b71;
+$yiq-contrasted-threshold: 195;
 
 // Spacers
 $spacer: 1rem;
 $spacers: ();
-$spacers: map-merge((
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 6)
-), $spacers);
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5
+    ),
+    5: (
+      $spacer * 3
+    ),
+    6: (
+      $spacer * 6
+    )
+  ),
+  $spacers
+);
 
 // Cards
 $card-cap-bg: $white;
@@ -44,11 +60,11 @@ $pagination-padding-x: 1rem;
 
 // Navbar
 $navbar-brand-font-size: 1rem;
-$navbar-padding-y:                  ($spacer * 0.8);
-$navbar-light-color:                rgba($black, .8);
-$navbar-dark-color:                 rgba($white, .9);
-$navbar-dark-toggler-border-color:  rgba($white, .5);
-$navbar-light-toggler-border-color: rgba($black, .5);
+$navbar-padding-y: ($spacer * 0.8);
+$navbar-light-color: rgba($black, 0.8);
+$navbar-dark-color: rgba($vue-dark, 0.9);
+$navbar-dark-toggler-border-color: rgba($white, 0.5);
+$navbar-light-toggler-border-color: rgba($black, 0.5);
 
 // Settings
 $headings-margin-bottom: 1.1rem;

@@ -1,6 +1,7 @@
 .c-content {
-  h2, h3 {
-    margin-top: - $paragraph-margin-bottom * 1.5;
+  h2,
+  h3 {
+    margin-top: -$paragraph-margin-bottom * 1.5;
     padding-top: $paragraph-margin-bottom * 3;
     margin-bottom: $paragraph-margin-bottom * 1.5;
   }
@@ -50,12 +51,19 @@
   blockquote {
     padding: $spacer $spacer;
     // font-size: 1.25rem;
-    border-left: .25rem solid $border-color;
-    p { margin: 0; }
+    border-left: 0.25rem solid $border-color;
+    p {
+      margin: 0;
+    }
   }
 
   img {
     @extend .img-fluid;
+  }
+
+  .img-head {
+    height: 200px;
+    width: auto;
   }
 
   iframe {

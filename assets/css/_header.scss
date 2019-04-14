@@ -3,7 +3,7 @@
 
   .page-header {
     color: #eee;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, .30);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
   }
 
   a:hover {
@@ -17,7 +17,8 @@
     color: #fff;
   }
 
-  &.header-team, &.header-tutorials {
+  &.header-team,
+  &.header-tutorials {
     background-color: #fcfcfc;
     border-bottom: 1px solid #efefef;
     color: #333;
@@ -26,9 +27,10 @@
     margin-bottom: 40px;
   }
 
-  &.header-team, &.header-tutorials {
-    padding: $spacer*8 0 $spacer*4;
-    margin-bottom: $spacer*4;
+  &.header-team,
+  &.header-tutorials {
+    padding: $spacer * 8 0 $spacer * 4;
+    margin-bottom: $spacer * 4;
   }
 
   &.header-post {
@@ -51,13 +53,15 @@
   }
 
   &.header-homepage {
-    background-image: linear-gradient(-180deg, #10161E 0%, #243348 100%);
-    border-bottom: 1px solid #efefef;
-    color: $body-color;
+    // background-image: linear-gradient(-180deg, #10161e 0%, #243348 100%);
+    background: #f7f7f7;
+    // border-bottom: 1px solid #efefef;
+    // color: $body-color;
     padding-bottom: 15px;
     padding-top: 100px;
-    color: $light;
-    padding: $spacer*8 0 $spacer*6;
+    // color: $light;
+    color: #435b71;
+    padding: $spacer * 8 0 $spacer * 6;
     height: 100vh;
 
     .header-homepage-title {
@@ -65,17 +69,16 @@
       font-weight: 600;
     }
   }
-
 }
 
 .header-workshop {
   padding-top: 100px;
-  background: url('/assets/img/courses/header-bg.jpg');
+  background: url("/assets/img/courses/header-bg.jpg");
   background-size: cover;
   background-position: center center;
 
   .header-intro {
-    font-size: 1.4rem
+    font-size: 1.4rem;
   }
 
   &.header-workshop-gradient-overlay {
@@ -86,20 +89,20 @@
       right: 0;
       bottom: 0;
       left: 0;
-      opacity: .94;
+      opacity: 0.94;
       background-image: linear-gradient(-180deg, #fefefe 0%, #efefef 100%);
     }
   }
 }
 
 .header-team {
-  background: url('/assets/img/headers/team.jpg');
+  background: url("/assets/img/headers/team.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 .header-author {
-  background: url('/assets/img/headers/autor-werden.jpg');
+  background: url("/assets/img/headers/autor-werden.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -109,11 +112,14 @@
     &.header-post {
       min-height: 400px;
       .text-wrapper {
-        position: absolute; bottom: 0; left: 0; right: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
       }
     }
 
-    &.header-homepage  .header-homepage-title {
+    &.header-homepage .header-homepage-title {
       font-size: 5rem;
     }
   }
@@ -124,8 +130,10 @@
     &.header-post {
       min-height: 300px;
       .text-wrapper {
-        position: absolute; bottom: 0; left: 0; right: 0;
-
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
       }
       .header-post-title {
         font-size: 200%;
@@ -134,7 +142,7 @@
 
     &.header-homepage .header-homepage-title {
       font-size: 3rem;
-      line-height: 3.0rem;
+      line-height: 3rem;
     }
   }
 }
@@ -161,7 +169,12 @@
 .c-header-light {
   color: $dark;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $dark;
     text-shadow: 1px 1px 0px $light;
   }
@@ -170,7 +183,12 @@
 .c-header-dark {
   color: $light;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $light;
     text-shadow: 1px 1px 0px $dark;
   }

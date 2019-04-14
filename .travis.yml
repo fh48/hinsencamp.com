@@ -15,4 +15,4 @@ deploy:
   on:
     branch: master
 env:
- - JEKYLL_ENV=production
+  - JEKYLL_ENV=production
