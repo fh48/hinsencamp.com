@@ -1,9 +1,9 @@
 ---
 title: "Progressive Web App In VueJs - Offline Availability"
-description: "Carousel, slideshow or slider, however you call it, this class of UI elements is essential to modern web dev. Let's build on in VueJS!"
+description: "Learn to build a Progressive Web Apps (PWAs) in VueJS and combine discoverability& accessibility with the functionality of a native app."
 author: "Fabian Hinsenkamp"
 published_at: 2019-02-20 11:06:30.486476
-categories: [vueJS, frontend, PWA]
+categories: [vue, PWA, tutorial]
 ---
 
 In this tutorial, we will implement and discuss the Service Worker, one of the core technologies that adds the astonishing offline-first experience of a native app to a regular web app.
