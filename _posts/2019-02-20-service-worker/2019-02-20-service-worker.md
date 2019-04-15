@@ -16,7 +16,7 @@ Part I — Build the Tax Calculator App in VueJS.
 
 No worries if you haven’t done Part I you can also start straight into building PWA features. Let’s get going!
 
-## Offline-first Paradigm
+## Offline-First Paradigm
 
 On the web of today the majority of websites and web apps simply fail when there is no network connection. This is so common, that users of today don’t even complain about this poor experience.
 

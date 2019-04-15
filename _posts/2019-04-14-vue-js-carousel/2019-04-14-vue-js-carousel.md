@@ -3,7 +3,7 @@ title: "How to design and build a carousel in VueJS"
 description: "Carousel, slideshow or slider, however you call it, this class of UI elements is essential to modern web dev. Let's build on in VueJS!"
 author: "Fabian Hinsenkamp"
 published_at: 2019-04-14 15:06:30.486476
-categories: [vueJS, frontend]
+categories: [vue, tutorial]
 ---
 
 A carousel, slideshow, or slider - however you call it this class of UI - has become one of the core elements used in modern web development. Today, it's almost impossible to find any Website or UI library which doesn't come with one or another kind of carousel.
