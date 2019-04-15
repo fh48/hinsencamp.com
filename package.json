@@ -1,0 +1,7 @@
+{
+  "name": "hinsencamp.com",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bundle exec jekyll serve --incremental"
+  }
+}
