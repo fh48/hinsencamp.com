@@ -3,36 +3,7 @@
   <head
     prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
   >
-    <script>
-      (function(h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function() {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 1287684, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-138634153-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-138634153-1");
-    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,7 +14,7 @@
     <meta name="keywords" content="" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' hinsencamp.com; style-src 'self' 'unsafe-inline'; script-src 'self' hinsencamp.com 'nonce-33f4af24249' www.google-analytics.com; img-src 'self' data: www.google-analytics.com
+      content="default-src 'self' www.hinsencamp.com; style-src 'self' 'unsafe-inline'; script-src 'self' www.hinsencamp.com 'nonce-33f4af24249' www.google-analytics.com; img-src 'self' data: www.google-analytics.com
       http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com 'unsafe-eval';
       "
     />
@@ -68,7 +39,7 @@
       rel="stylesheet"
       href="/assets/css/app.css?{{ site.time | date: '%s%N' }}"
     />
-    {% include _ga.html %}
+    {% include _ga.html %} {% include _ga-new.html %} {% include _hotjar.html %}
   </head>
 
   <!-- Position relative is for Bootstrap TOC Plugin -->
