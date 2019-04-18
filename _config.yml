@@ -5,7 +5,7 @@ twitter_username: jekyllrb
 github_username: jekyll
 ga_property: "UA-97181121-5"
 permalink: /article/:slug/
-repository_url: "https://github.com/fh48/reactjs.de"
+repository_url: "https://github.com/fh48/hinsencamp.com"
 ws_course_id: 17
 
 collections:
@@ -31,9 +31,9 @@ defaults:
 
 pagination:
   enabled: true
-  per_page: 5
+  per_page: 3
   permalink: "/page/:num/"
-  title: ":title - page :num von :max"
+  title: ":title - page :num from :max"
   limit: 0
   sort_field: "date"
   sort_reverse: true
@@ -58,3 +58,6 @@ exclude:
 # webrick:
 #   headers:
 #     Content-Security-Policy: "style-src 'self'"
+
+# NewsLetter
+mailchimp: "https://online.us20.list-manage.com/subscribe/post?u=37aa3fc635b8098b4d1fb7cf3&amp;id=85408e3dd1&MERGE0=foo"

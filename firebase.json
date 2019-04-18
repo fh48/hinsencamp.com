@@ -61,8 +61,8 @@
         "type": 301
       },
       {
-        "source": "/ueber-uns/",
-        "destination": "/team/",
+        "source": "/about/",
+        "destination": "/about/",
         "type": 301
       },
       {

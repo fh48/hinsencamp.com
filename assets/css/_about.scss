@@ -1,0 +1,19 @@
+.author-img {
+}
+
+.author-text {
+  text-align: center;
+  padding: 15px;
+}
+
+.socialmedia-icon {
+  cursor: pointer;
+
+  filter: brightness(1);
+}
+
+.socialmedia-links {
+  &:hover {
+    text-decoration: none !important;
+  }
+}

@@ -3,7 +3,7 @@ title: "Discover the Power of Closures in VueJS"
 description: "Learn how plane JavaScript closures work and their power in VueJS! This tutorial comes with a coding challenge. 💪 Build an Emoji Picker!"
 author: "Fabian Hinsenkamp"
 published_at: 2019-04-15 15:06:30.486476
-categories: [vue, tutorial, challenge]
+categories: [vue, challenge]
 ---
 
 Today's frontend technology landscape, required from engineers to know about a wide variety of technologies including frameworks, libraries and packages.

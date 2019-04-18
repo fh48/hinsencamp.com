@@ -19,7 +19,7 @@
 
   &.header-team,
   &.header-tutorials {
-    background-color: #fcfcfc;
+    background-color: #f7f7f7;
     border-bottom: 1px solid #efefef;
     color: #333;
     padding-bottom: 15px;
@@ -53,23 +53,31 @@
   }
 
   &.header-homepage {
-    // background-image: linear-gradient(-180deg, #10161e 0%, #243348 100%);
     background: #f7f7f7;
-    // border-bottom: 1px solid #efefef;
-    // color: $body-color;
     padding-bottom: 15px;
     padding-top: 100px;
-    // color: $light;
     color: #435b71;
     padding: $spacer * 8 0 $spacer * 6;
     height: 100vh;
-
     .header-homepage-title {
-      line-height: 4.5rem;
+      line-height: 4.9rem;
       font-weight: 600;
     }
   }
 }
+
+// &.header-about {
+//   color: #f7f7f7;
+//   background: #435b71;
+//   padding-bottom: 15px;
+//   padding-top: 100px;
+//   padding: $spacer * 8 0 $spacer * 6;
+//   height: 100vh;
+//   .header-about-title {
+//     line-height: 4.5rem;
+//     font-weight: 600;
+//   }
+// }
 
 .header-workshop {
   padding-top: 100px;
@@ -96,9 +104,9 @@
 }
 
 .header-team {
-  background: url("/assets/img/headers/team.jpg");
-  background-size: cover;
-  background-position: center center;
+  // background: url("/assets/img/headers/autor-werden.jpg");
+  // background-size: cover;
+  // background-position: center center;
 }
 
 .header-author {
