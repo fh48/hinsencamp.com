@@ -4,11 +4,11 @@
     "cleanUrls": true,
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
-      {
-        "source": "/article/how-to-design-and-build-a-carousel-in-VueJS/",
-        "destination": "/article/vue-js-carousel/",
-        "type": 301
-      },
+      // {
+      //   "source": "/article/how-to-design-and-build-a-carousel-in-VueJS/",
+      //   "destination": "/article/vue-js-carousel/",
+      //   "type": 301
+      // },
 
       {
         "source": "/posts/:id*",
@@ -60,11 +60,11 @@
         "destination": "/",
         "type": 301
       },
-      {
-        "source": "/about/",
-        "destination": "/about/",
-        "type": 301
-      },
+      // {
+      //   "source": "/about/",
+      //   "destination": "/about/",
+      //   "type": 301
+      // },
       {
         "source": "/schulungen/inhouse/",
         "destination": "/schulungen/react-intensiv/",
