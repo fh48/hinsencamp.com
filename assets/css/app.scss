@@ -96,7 +96,7 @@ $carousel-control-width: 6%;
 @import "newsletter";
 
 .related-post-parent {
-  a {
+  &:chi {
     margin: 0.1rem;
   }
 }
