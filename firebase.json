@@ -59,17 +59,17 @@
         "source": "/links/*",
         "destination": "/",
         "type": 301
-      },
+      }
       // {
       //   "source": "/about/",
       //   "destination": "/about/",
       //   "type": 301
       // },
-      {
-        "source": "/schulungen/inhouse/",
-        "destination": "/schulungen/react-intensiv/",
-        "type": 301
-      }
+      // {
+      //   "source": "/schulungen/inhouse/",
+      //   "destination": "/schulungen/react-intensiv/",
+      //   "type": 301
+      // }
     ],
     "headers": [
       {

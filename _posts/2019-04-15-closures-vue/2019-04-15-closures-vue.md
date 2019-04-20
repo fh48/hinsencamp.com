@@ -10,7 +10,7 @@ Today's frontend technology landscape, required from engineers to know about a w
 
 No wonder, that vanilla JavaScript skills and in-depth knowledge might start spreading thin. No matter if you are just learning JavaScript, refreshing your basic knowledge or preparing for job interviews → This tutorial is for you!
 
-Here you learn how plane JavaScript closures work. Be aware, it comes with a challenge. 💪 It's all about building an elegant Emoji Picker in VueJS and leverage closures by using higher order functions.
+Here you learn how powerful plane JavaScript closures are. Be aware, this tutorial comes with a challenge. 💪 It's all about building an elegant Emoji Picker in VueJS and leverage closures by using higher order functions.
 
 **Let's dive right into it!**
 
