@@ -2,6 +2,7 @@
 title: "How to design and build a carousel in VueJS"
 description: "Carousel, slideshow or slider, however you call it, this class of UI elements is essential to modern web dev. Let's build on in VueJS!"
 author: "Fabian Hinsenkamp"
+originally_published: "https://medium.freecodecamp.org/how-to-design-and-build-a-carousel-feature-in-vuejs-125f690a3a9e"
 published_at: 2019-04-14 15:06:30.486476
 categories: [vue, tutorial]
 ---

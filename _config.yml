@@ -59,5 +59,3 @@ exclude:
 #   headers:
 #     Content-Security-Policy: "style-src 'self'"
 
-# NewsLetter
-mailchimp: "https://online.us20.list-manage.com/subscribe/post?u=37aa3fc635b8098b4d1fb7cf3&amp;id=85408e3dd1&MERGE0=foo"

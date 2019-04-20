@@ -2,6 +2,7 @@
 title: "Progressive Web App In VueJs - Offline Availability"
 description: "Learn to build a Progressive Web Apps (PWAs) in VueJS and combine discoverability& accessibility with the functionality of a native app."
 author: "Fabian Hinsenkamp"
+originally_published: "https://hackernoon.com/build-a-progressive-web-app-in-vuejs-from-zero-to-hero-part-2-the-service-worker-d9babc3d756f"
 published_at: 2019-02-20 11:06:30.486476
 categories: [vue, PWA, tutorial]
 ---
