@@ -1,0 +1,36 @@
+#cookie-notice {
+  padding: 7px 15px;
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  // background: rgba(255, 255, 255, 1);
+  background: $good-grey-shade-darker;
+  color: $vue-dark;
+
+  .btn-success {
+    color: white;
+  }
+
+  a {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  #cookie-notice span {
+    display: block;
+    padding-top: 3px;
+    margin-bottom: 13px;
+  }
+  #cookie-notice a {
+    position: relative;
+    bottom: 4px;
+  }
+}

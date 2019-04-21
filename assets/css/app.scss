@@ -21,6 +21,8 @@ $info: #61dafb;
 $black: #000;
 $white: #fff;
 $vue-dark: #435b71;
+$good-grey: #f7f7f7;
+$good-grey-shade-darker: #dedede;
 $yiq-contrasted-threshold: 195;
 
 // Spacers
@@ -94,6 +96,7 @@ $carousel-control-width: 6%;
 
 //New Stuff
 @import "newsletter";
+@import "cookie-notice";
 
 .related-post-parent {
   &:chi {
