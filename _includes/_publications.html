@@ -1,16 +1,26 @@
-<div class="container">
-  <!-- <h2></h2> -->
-  <div class="row">
-    <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
-      <img
-        alt="{{ author.name }}"
-        class="shadow-sm rounded img-fluid"
-        {%
-        if
-        author.gravatar_uid
-        %}
-        src="/assets/img/gravatars/{{ author.gravatar_uid }}-160x160.jpg"
-      />
+<div class="container mb-6">
+  <h2 class="headline">Published By</h2>
+  <p class="sub-headline">
+    You can find my articles at a growing number of top tier publications
+  </p>
+  <div class="row d-flex justify-content-center">
+    <div class="col-8 col-sm-6 col-md-6 col-lg-5 mt-2 mb-4">
+      <a href="https://medium.freecodecamp.org/search?q=fabian%20hinsenkamp">
+        <img
+          alt="freeCodeCamp"
+          class="img-fluid black-svg"
+          src="/assets/img/publications/free-code-camp.svg"
+        />
+      </a>
+    </div>
+    <div class="col-8 col-sm-6 col-md-6 col-lg-5 mt-2 mb-4">
+      <a href="https://hackernoon.com/search?q=fabian%20hinsenkamp">
+        <img
+          alt="freeCodeCamp"
+          class="img-fluid"
+          src="/assets/img/publications/hackernoon-grey.png"
+        />
+      </a>
     </div>
   </div>
 </div>

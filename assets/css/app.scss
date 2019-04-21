@@ -104,6 +104,17 @@ $carousel-control-width: 6%;
   }
 }
 
+.headline {
+  color: $vue-dark;
+  text-align: center;
+}
+
+.sub-headline {
+  @extend .headline;
+
+  font-size: 20px;
+}
+
 // Nothing else
 // modify bootstrap styles;
 .card {
@@ -135,4 +146,8 @@ $carousel-control-width: 6%;
     box-shadow: 0 10px 20px rgba(3, 27, 78, 0.1);
     color: rgba(3, 27, 78, 0.7);
   }
+}
+
+.black-svg {
+  filter: brightness(0.1);
 }

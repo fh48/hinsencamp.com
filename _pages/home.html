@@ -7,30 +7,30 @@ permalink: /
 ---
 
 <div class="header header-homepage d-flex align-items-center mb-6">
-
-    <div class="container d-flex">
-      <div class="col-12 col-sm-12">
+  <div class="container d-flex">
+    <div class="col-12 col-sm-12">
       <h1 class="header-homepage-title">Let's Grow Senior Together!</h1>
       <p class="mt-sm-2 pt-sm-2 mt-md-3 pt-md-3 h3">
-        Learn all about Front-End Engineering to grow intro a Senior Role.
+        Learn all about Front-End Engineering to grow into a Senior Role.
       </p>
-      <a href="/article/" class="btn btn-primary"
-      >Browse Articles!</a
-    >
+      <a href="/article/" class="btn btn-primary">Browse Articles!</a>
     </div>
   </div>
 </div>
 
 <main role="main">
-    <div class="container">
-        <h2>Recent Articles</h2>
-        <div class="row">
-          {% for post in site.posts limit:3 %}
-          <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
-            {% include _post_card.html %}
-          </div>
-          {% endfor %}
-        </div>
+  <div class="container mb-4 justify-content-center">
+    <h2 class="headline">Recent Articles</h2>
+    <p class="sub-headline">
+      Find out about the latest topics we covered in the weekly growth challenge
+    </p>
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+      <div class="col-sm-6 col-md-4 col-lg-4 mb-6">
+        {% include _post_card.html %}
       </div>
+      {% endfor %}
+    </div>
   </div>
+  {% include _publications.html %}
 </main>
