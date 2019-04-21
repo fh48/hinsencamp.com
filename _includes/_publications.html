@@ -1,0 +1,16 @@
+<div class="container">
+  <!-- <h2></h2> -->
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+      <img
+        alt="{{ author.name }}"
+        class="shadow-sm rounded img-fluid"
+        {%
+        if
+        author.gravatar_uid
+        %}
+        src="/assets/img/gravatars/{{ author.gravatar_uid }}-160x160.jpg"
+      />
+    </div>
+  </div>
+</div>
