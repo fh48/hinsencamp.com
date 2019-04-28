@@ -59,7 +59,7 @@ hello(); // A C
 
 globalString = "B";
 
-hallo(); // B C
+hello(); // B C
 ```
 
 The example looks probably very familiar, not any special, this explains why we barely realise how powerful closures can as it's very common to only define functions in the global scope.
