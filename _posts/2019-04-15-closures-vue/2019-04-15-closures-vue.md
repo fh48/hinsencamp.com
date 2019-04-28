@@ -37,7 +37,7 @@ function square(x) {
 const squareA = square(5);
 
 console.log(squareA); // 25
-console.log(squareB); // ReferenceError: squareX is not defined.
+console.log(squareX); // ReferenceError: squareX is not defined.
 ```
 
 Think about scopes as the temporary context only the code within that function has access to.
@@ -71,7 +71,7 @@ However, when functions are defined within another function's scope, closures en
 A functions that operate on other functions, either by taking them as arguments or by returning them, are called **higher-order functions**.
 
 ```javascript
-function craeteMultiolier(multiplier) {
+function createMultiplier(multiplier) {
   return function(value) {
     return value * multiplier;
   };
