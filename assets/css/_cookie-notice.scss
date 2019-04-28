@@ -6,7 +6,7 @@
   bottom: 0;
   width: 100%;
   // background: rgba(255, 255, 255, 1);
-  background: $good-grey-shade-darker;
+  background: rgba($good-grey-shade-darker, 0.9);
   color: $vue-dark;
 
   .btn-success {
