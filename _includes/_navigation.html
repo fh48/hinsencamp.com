@@ -4,6 +4,51 @@
   }}{% else %}dark{% endif %} navbar-expand-md"
 >
   <div class="container">
+    <ul class="navbar-nav">
+      <li class="nav-item d-flex">
+        <a class="nav-link" href="/">hinsencamp</a>
+      </li>
+    </ul>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li
+          class="nav-item {% if page.url contains '/Challenge' %}active{% endif %}"
+        >
+          <a class="nav-link" href="/challenge/">Senior Dev Challenge</a>
+        </li>
+        <li
+          class="nav-item {% if page.url contains '/article' %}active{% endif %}"
+        >
+          <a class="nav-link" href="/article/">Articles</a>
+        </li>
+        <li
+          class="nav-item {% if page.url contains '/about' %}active{% endif %}"
+        >
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<nav
+  class="navbar c-navbar-underline c-navbar-{% if page.header %}{{
+    page.header
+  }}{% else %}dark{% endif %} navbar-expand-md"
+>
+  <div class="container">
     <button
       class="navbar-toggler"
       type="button"
@@ -16,71 +61,42 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <ul class="navbar-nav">
-      <li class="nav-item d-flex">
-        <a class="nav-link" href="/">hinsencamp</a>
+      <li class="nav-item">
+        <a class="nav-link" href="/">ReactJS.DE</a>
       </li>
     </ul>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
-        <!-- <li
-          class="nav-item {% if page.url contains '/article' %}active{% endif %}"
-        >
-          <a class="nav-link" href="/article/">Articles</a>
-        </li>
         <li
-          class="nav-item {% if page.url contains '/courses' %}active{% endif %}"
+          class="nav-item {% if page.url contains '/artikel' %}active{% endif %}"
         >
-          <a class="nav-link" href="/courses/">Courses</a>
+          <a class="nav-link" href="/artikel/">Artikel</a>
         </li>
         <li
           class="nav-item {% if page.url contains '/schulungen' %}active{% endif %}"
         >
-           <a class="nav-link" href="/about">About</a>
-        </li> -->
-        <!-- <li
-          class="nav-item {% if page.url contains '/schulungen' %}active{% endif %}"
+          <a class="nav-link" href="/schulungen/react-intensiv/">Schulungen</a>
+        </li>
+        <li
+          class="nav-item {% if page.url contains '/team' %}active{% endif %}"
         >
-           <a class="nav-link" href="/schulungen/react-intensiv/">Schulungen</a>
-        </li> -->
+          <a class="nav-link" href="/team/">Team</a>
+        </li>
       </ul>
       <ul class="navbar-nav">
-        <li
-          class="nav-item {% if page.url contains '/article' %}active{% endif %}"
-        >
-          <a class="nav-link" href="/article/">Articles</a>
-        </li>
-        <li
-          class="nav-item {% if page.url contains '/about' %}active{% endif %}"
-        >
-          <a class="nav-link" href="/about/">About</a>
-        </li>
-        <!-- <li
-          class="nav-item {% if page.url contains '/courses' %}active{% endif %}"
-        >
-          <a class="nav-link" href="/courses/">Courses</a>
-        </li>
-        <li
-          class="nav-item {% if page.url contains '/schulungen' %}active{% endif %}"
-        >
-          <a class="nav-link" href="/about">About Me</a>
-        </li>
-
-        <li
-          class="nav-item {% if page.url contains '/schulungen' %}active{% endif %}"
-        >
-          <a class="nav-link" href="/about">Contact</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" target="_blank" rel="noopener nofollow" href="https://join.slack.com/t/reactjs-de/shared_invite/enQtNDAwNjEzNTc2MTE0LTdiZGFjZmNmYWE0ZWZmMmUzOGI3YTA1ZDg2NTk1N2UwZmE3YjJkNDgxNjk4Mzg1Zjg3YzNhZjNhYTgxMGE2OTQ">Slack</a>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            target="_blank"
+            rel="noopener nofollow"
+            href="https://join.slack.com/t/reactjs-de/shared_invite/enQtNDAwNjEzNTc2MTE0LTdiZGFjZmNmYWE0ZWZmMmUzOGI3YTA1ZDg2NTk1N2UwZmE3YjJkNDgxNjk4Mzg1Zjg3YzNhZjNhYTgxMGE2OTQ"
+            >Slack</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/autor-werden/">Neuer article</a>
-        </li> -->
+          <a class="nav-link" href="/autor-werden/">Neuer Artikel</a>
+        </li>
       </ul>
-      <!--<form class="form-inline mr-auto" action="/suche/" method="GET" autocomplete="off">
-        <input name="q" class="form-control navbar-search" type="text" placeholder="&#xF002;">
-      </form>-->
     </div>
   </div>
-  <!-- .container -->
-</nav>
+</nav> -->

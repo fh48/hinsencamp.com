@@ -7,6 +7,7 @@ ga_property: "UA-97181121-5"
 permalink: /article/:slug/
 repository_url: "https://github.com/fh48/hinsencamp.com"
 ws_course_id: 17
+mail_chimp: "https://online.us20.list-manage.com/subscribe/post?u=37aa3fc635b8098b4d1fb7cf3&amp;id=85408e3dd1"
 
 collections:
   pages:

@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+{% if page.header-section %}
+<div class="header header-challenge d-flex align-items-center">
+  <div class="container">
+    <h1 class="align-self-center text-center header-homepage-title">
+      <!-- {{ page.headerTitle }} -->
+    </h1>
+  </div>
+</div>
+{% endif %}
+<div class="container pt-6">
+  <h1 class="py-4">{{ page.title }}</h1>
+  <main role="main">
+    {{ content }}
+  </main>
+</div>

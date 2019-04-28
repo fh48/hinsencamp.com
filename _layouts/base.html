@@ -15,7 +15,8 @@
       content=" default-src 'self'
     www.google-analytics.com http://*.hotjar.com:* https://*.hotjar.com:* http://*.hotjar.io https://*.hotjar.io wss://*.hotjar.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' ;
     script-src
-    'self' www.google-analytics.com https://www.googletagmanager.com
+    'self'
+    https://online.us20.list-manage.com http://s3.amazonaws.com www.google-analytics.com https://www.googletagmanager.com
     http://*.hotjar.com https://*.hotjar.com http://*.hotjar.io https://*.hotjar.io  'unsafe-inline'
     ; img-src 'self' data:
     www.google-analytics.com "
@@ -111,5 +112,22 @@
     <script src="/assets/js/vendor/bootstrap-toc-1.0.0.min.js"></script>
 
     {% endif %}
+    <!-- <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    />
+    <script type="text/javascript">
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script> -->
   </body>
 </html>

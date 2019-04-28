@@ -12,15 +12,32 @@ $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial,
 $font-size-base: 1.1rem;
 $line-height-base: 1.618;
 
+// Style Colors
+// https://coolors.co/ef476f-ffd166-435b71-06d6a0-fcfcfc
+$orange: #ffd166;
+$red: #ef476f;
+$green: #06d6a0;
+$baby-powder: #fcfcfc;
+$vue-dark: #435b71;
+
+// Brand Color
+$off-white: #fcfcfc;
+$lightShade2: #f7f7f7;
+$grey: #dedede;
+$brandColor: #435b71;
+
+$darkShade: #292f38;
+$darkButNotBlack: #2c2e2f;
+
 // Theme Colors
 // $primary: #709cde; // #4eafca
-$success: #43ac6a;
+$success: $green;
 $warning: #e99002;
 $danger: #f04124;
 $info: #61dafb;
 $black: #000;
 $white: #fff;
-$vue-dark: #435b71;
+
 $good-grey: #f7f7f7;
 $good-grey-shade-darker: #dedede;
 $yiq-contrasted-threshold: 195;
@@ -104,8 +121,14 @@ $carousel-control-width: 6%;
   }
 }
 
+.no-decorator {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
 .headline {
-  color: $vue-dark;
+  // color: $vue-dark;
   text-align: center;
 }
 
@@ -144,10 +167,21 @@ $carousel-control-width: 6%;
 
   &:hover {
     box-shadow: 0 10px 20px rgba(3, 27, 78, 0.1);
-    color: rgba(3, 27, 78, 0.7);
   }
 }
 
 .black-svg {
   filter: brightness(0.1);
+}
+
+.landing-page {
+  .first-section {
+    background: $off-white;
+    // color: $brandColor;
+  }
+
+  .second-section {
+    background: $lightShade2;
+    color: $brandColor;
+  }
 }

@@ -6,31 +6,65 @@ description: All about Software Development, VuejS and Progressive Web Apps
 permalink: /
 ---
 
-<div class="header header-homepage d-flex align-items-center mb-6">
+<div class="header header-homepage d-flex align-items-center">
   <div class="container d-flex">
     <div class="col-12 col-sm-12">
       <h1 class="header-homepage-title">Let's Grow Senior Together!</h1>
       <p class="mt-sm-2 pt-sm-2 mt-md-3 pt-md-3 h3">
         Learn all about Front-End Engineering to grow into a Senior Role.
       </p>
+
       <a href="/article/" class="btn btn-primary">Browse Articles!</a>
     </div>
   </div>
 </div>
 
-<main role="main">
-  <div class="container mb-4 justify-content-center">
-    <h2 class="headline">Recent Articles</h2>
-    <p class="sub-headline">
-      Find out about the latest topics we covered in the weekly growth challenge
-    </p>
-    <div class="row">
-      {% for post in site.posts limit:3 %}
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-6">
-        {% include _post_card.html %}
+<main role="main" class="landing-page ">
+  <div class="first-section pt-6">
+    <div class="container justify-content-center ">
+      <h2 class="headline">Recent Articles</h2>
+      <p class="sub-headline">
+        Find out about the latest topics we covered in the weekly growth
+        challenge
+      </p>
+      <div class="row">
+        {% for post in site.posts limit:3 %}
+        <div class="col-sm-6 col-md-4 col-lg-4 mb-6">
+          {% include _post_card.html %}
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-  {% include _publications.html %}
+
+  <div class="second-section pt-6 pb-6">
+    <div class="container">
+      <h2 class="headline">Published By</h2>
+      <p class="sub-headline">
+        You can find my articles at a growing number of publications
+      </p>
+      <div class="row d-flex justify-content-center">
+        <div class="col-8 col-sm-6 col-md-6 col-lg-5 mt-2 mb-4">
+          <a
+            href="https://medium.freecodecamp.org/search?q=fabian%20hinsenkamp"
+          >
+            <img
+              alt="freeCodeCamp"
+              class="img-fluid black-svg"
+              src="/assets/img/publications/free-code-camp.svg"
+            />
+          </a>
+        </div>
+        <div class="col-8 col-sm-6 col-md-6 col-lg-5 mt-2 mb-4">
+          <a href="https://hackernoon.com/search?q=fabian%20hinsenkamp">
+            <img
+              alt="freeCodeCamp"
+              class="img-fluid"
+              src="/assets/img/publications/hackernoon-grey.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>

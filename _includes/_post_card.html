@@ -1,10 +1,10 @@
 <div class="card h-100">
   <a
-    class="card-img card-img-top"
-    style="height: 150px;
-    background-image: url('/article/{{ post.slug }}/{{ post.header_image }}');
-    "
     href="{{ post.url }}"
+    class="card-img card-img-top "
+    style="height: 150px;
+ background-image: url('/article/{{ post.slug }}/{{ post.header_image }}');
+    "
   >
     <span class="c-post-categories">
       {% for category in post.categories %}
@@ -13,8 +13,7 @@
       {% endfor %}
     </span>
   </a>
-  <a class="card-body text-dark" href="{{ post.url }}">
-    <!-- <div class="text-muted">{{ post.author }}</div> -->
+  <a class="card-body text-dark no-decorator" href="{{ post.url }}">
     <span class="font-weight-bold">
       {{ post.title }}
     </span>

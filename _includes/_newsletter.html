@@ -1,35 +1,12 @@
 <div class="newsletter-section d-print-none">
-  <div class="container">
-    <p class="lead text-center">
-      Get all new tutorials, Coding Challenges & Online Course in your Inbox!🙌
+  <div class="container justifiy-content-center align-items-center">
+    <p class="text-center">
+      Join the <a href="/challenge">Senior Dev Challenge</a> and get weekly
+      challenges in your inbox! 🙌
     </p>
-    <form
-    action="https://online.us20.list-manage.com/subscribe/post?u=37aa3fc635b8098b4d1fb7cf3&amp;id=85408e3dd1"
-    method="post"
-    id="mc-embedded-subscribe-form"
-    name="mc-embedded-subscribe-form"
-    class="validate d-flex align-items-center justify-content-center"
-    target="_blank"
-    novalidate
-  >
-    <div class="mc-field-group ">
-      <input
-          type="email"
-          placeholder="Enter your e-mail"
-          name="EMAIL"
-          class="required email news-letter-input input-lg"
-          id="mce-EMAIL"
-        />
-      </div>
 
-      <input
-      type="submit"
-      value="Submit"
-      name="subscribe"
-      id="mc-embedded-subscribe"
-      class="btn btn-success text-light"
-      />
-    </form>
+    {% include _newsletter_mailchimp.html %}
+
     </p>
   </div>
 </div>
