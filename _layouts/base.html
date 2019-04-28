@@ -38,12 +38,14 @@
     {% endif %} {% endif %} {% endfor %} {% endif %} {% include
     _social_meta_tags.html %} {% include _hotjar.html %} {% include _ga_new.html
     %}
+
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="ReactJS.DE RSS Feed"
-      href="/feed.xml"
+      href="{{ site.url }}/feed.xml"
+      title="{{ site.title }}"
     />
+
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
