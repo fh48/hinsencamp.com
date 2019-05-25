@@ -176,8 +176,6 @@ writeToJSON(graph.graph, "graph");
 
 Play around with the number of participants. You will see, with increasing network size it becomes quickly very complicated to keep an overview by just looking at the JSON object. For a better overview, you can drop the JSON file in the visualiser as well.
 
-// img
-
 ## Conclusion
 
 We have built the initial data structure for a social network. Therefore, we have created constructors for the graph and nodes representing users. Moreover, we added edges connecting these nodes bi-directional. This structure represents a solid foundation to build more powerful features on top of it. Here are some hints of what could be added next:
