@@ -6,7 +6,7 @@ published_at: 2019-05-24 08:06:30.486476
 categories: [javascript, node.js, tutorial]
 ---
 
-> _How would you design the data structure for a very large social network like Facebook or Linkedn?_
+> _How would you design the data structure for a very large social network like Facebook or Linkedin?_
 
 Such kind of question is known to be asked by top-tier tech companies like
 Google, Amazon, Facebook and Linkedin as part of their recruitment process.
@@ -19,7 +19,7 @@ Later on, we use some helper functions, you find them with the rest of the code 
 
 Let's start with getting a basic understanding of what we actually want to achieve!
 
-## What is a social network at its core?
+## What is a Social Network at its Core?
 
 When we try to describe what's a social network at its core, we quickly end up talking about users and connections between them.
 Typically users have some kind of connection to other users. Even though theoretically millions of connections are possible, most users don't have more than a couple hundred connections. To put it differently, users don't have connections to most other users in the network.

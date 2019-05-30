@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "start": "JEKYLL_ENV=production bundle exec jekyll serve --incremental",
-    "publish": "firebase deploy"
+    "deploy": "firebase deploy"
   }
 }
