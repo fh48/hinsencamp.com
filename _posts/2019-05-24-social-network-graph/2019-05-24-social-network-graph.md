@@ -6,30 +6,32 @@ published_at: 2019-05-24 08:06:30.486476
 categories: [javascript, node.js, tutorial]
 ---
 
-> _How would you design the data structure for a very large social network like Facebook or LinkedIn?_
+> _How would you design the data structure for a very large social network like Facebook or Linkedn?_
 
-Such kind of questions is known to be asked by companies top tech companies like Google, Amazon and obviously, facebook as part of their recruitment process.
+Such kind of question is known to be asked by top-tier tech companies like
+Google, Amazon, Facebook and Linkedin as part of their recruitment process.
 
-The reason is, that Social networks are a great use case for graph data structures. In this tutorial, we will dive into a hands-on example and build a social network yourself! Thereby, you will learn how a graph works and why it's such an important and powerful data structure.
+The reason is, that social networks are a great use case for graph data structures. In this tutorial, we will dive into the topic with an hands-on example and build a social network ourselves! Thereby, we will learn how a graph works and why it's such an important and powerful data structure.
 
-The tutorial is also suitable for beginners, the only pre-requirement is a basic understanding of object-oriented JavaScript. If you want to read some about graph theory up-front, check the additional resources, in the [resources section](#resources) at the bottom of the article.
+The tutorial is also suitable for beginners, the only pre-requirement is a basic understanding of object-oriented JavaScript. If you want to read some about graph theory up-front, check the additional resources, in the [resources section](#resources) at the bottom of this article.
+
+Later on, we use some helper functions, you find them with the rest of the code in this [repo](https://github.com/fh48/tutorial_SocialNetworkGraph);
 
 Let's start with getting a basic understanding of what we actually want to achieve!
 
 ## What is a social network at its core?
 
 When we try to describe what's a social network at its core, we quickly end up talking about users and connections between them.
-Typically users have some kind of connection to other users. Even though theoretically millions of connections are possible, most users don't have more than a couple hundred connections. To put it differently, users don't have connections to most other users in the network. Instead, you can find friendship circles which consist of a limited amount of users sharing many common connections.
+Typically users have some kind of connection to other users. Even though theoretically millions of connections are possible, most users don't have more than a couple hundred connections. To put it differently, users don't have connections to most other users in the network.
+Just think about it. How many friends do you have on Facebook compared to the number of existing profiles worldwide? Friendship circles are a common pattern, these consist of a limited amount of users sharing many common connections.
 
-Just think about it. How many friends do you have on Facebook compared to the number of existing profiles worldwide?
-
-Now, after having thought of the basic interaction of users in social networks, we can start building a data structure that allows us to easily implement these requirements. In the next section, you will see why graphs are a great fit.
+Now, after having thought of the basic interaction of users in social networks, we can start building a data structure that allows us to easily implement these requirements. In the next section you will see why the graph data structure is a great fit for this problem.
 
 ## Why Graphs?
 
-Simply put, graphs are nothing but a collection of nodes and edges which connect them. In the books, you find nodes often also being called vertices. In general, nodes can represent any kind of abstract data object. In the context of a social network, users are obvious to represent by nodes. But also other abstract entities like groups, companies, events, etc. can be represented by graphs.
+Simply put, graphs are nothing but a collection of nodes and edges which connect them. In the books, you find nodes often also called vertices. In general, nodes can represent any kind of abstract data object. In the context of a social network, it's obvious to represent users by nodes. But also other abstract entities like groups, companies, events, etc. can be modeled as nodes.
 
-Edges are connections between nodes. It exists a range of different types of edges, which allow you to model all kinds of relations between nodes. Read the article _Graph Data Structures for Beginners_ by [@amejiarosario](www.twitter.com/amejiarosario) to learn more about the difference between directed, undirected, cyclic and acyclic graphs. You find the link in the [resources section](#resources).
+The connections between nodes are called Edges. It exists a range of different types of edges, which allow you to model all kinds of relations between nodes. Read the article _Graph Data Structures for Beginners_ by [@amejiarosario](www.twitter.com/amejiarosario) to learn more about the differences between directed, undirected, cyclic and acyclic graphs. You find the link in the [resources section](#resources).
 
 What do you think? Sounds promising, right? Let's dive right into building a graph and see if it's actually as good.
 
@@ -45,20 +47,7 @@ function Graph() {
 }
 ```
 
-In general, there are two approaches to how graphs can represent nodes and their relations to each other.
-
-The first approach, which we will apply her is called `adjacency list` and relies on a list, kept by each individual node, which keeps all the node's edges.
-
-```javascript
-a -> { b c }
-b -> { a d }
-c -> { a }
-d -> { b c }
-```
-
-The second approach is called `adjacency matrix` and useful for complex (directed and weighted edges) and highly dense graphs. Read more about the benefits of each representation in _When are adjacency lists or matrices the better choice?_ you find the link in the [resources section](#resources).
-
-To continue the implementation, we add `getter` and `setter` methods to our graph. To add a node, we simply add the user as a key-value pair to the `graph` object and use the user's name as the key. Note, in production unique ids would the better choice.
+Now To continue the implementation, we add `getter` and `setter` methods to our graph. To add a node, we simply add the user as a key-value pair to the `graph` object and use the user's name as the key. Note, in production unique ids would the better choice.
 
 ```javascript
 Graph.prototype.addUser = function(user) {
@@ -87,13 +76,25 @@ function Node(user) {
 }
 ```
 
-The `friends` property stores all connected users. We could simply use an array or a set to store the connections' names.
-However, an object is more performant as we will need to check for already existing connections when creating edges.
+In general, there are two approaches to how graphs can represent nodes and their relations to each other.
+
+The first approach, which we will apply here is called `adjacency list` and relies on a list, kept by each individual node, storing all of the node's edges.
+
+```javascript
+a -> { b c }
+b -> { a d }
+c -> { a }
+d -> { b c }
+```
+
+The second approach is called `adjacency matrix`. Such are especially useful for complex (directed and weighted edges) and highly dense graphs. Read more about the benefits of each representation in _When are adjacency lists or matrices the better choice?_ you find the link in the [resources section](#resources).
+
+The `friends` property acts as our `adjacency list` and stores all connected users. We could simply use an array or a set to store the connections' names.
+However, an object is more performant as we will need to check for already existing connections when we create an edge.
 
 ## Create Edges
 
-The last missing piece is a method to add connections between nodes. As we decided on bidirectional edges,
-we need to add the connection to both involved nodes. To do so, we call `addConnection` within itself with the user's node we want to connect with.
+The last missing piece to complete the basic network, is a method to add connections between nodes. As we decided on bidirectional edges, we need to add the connection to both involved nodes. To do so, we call `addConnection` within itself with the user's node we want to connect with.
 
 ```javascript
 Node.prototype.addConnection = function(user) {
@@ -106,7 +107,7 @@ Node.prototype.addConnection = function(user) {
 
 Thanks to the condition which wraps the actual logic, we do not end up in an infinite loop. Having all this in place, we can actually start adding users to our network!
 
-## Grow the network!
+## Grow the Network!
 
 To start our network, let's create a couple of nodes and connect them. Therefore, we first create a couple of nodes.
 
@@ -138,13 +139,15 @@ graph.get("Fabian").addConnection(graph.get("Cassi"));
 graph.get("Ellie").addConnection(graph.get("Cassi"));
 ```
 
-You can use the helper function `writeToJSON` to export your graph data structure.
+You can use the helper function `writeToJSON` to export your graph to a json to get a better overview. In this [repo](https://github.com/fh48/tutorial_SocialNetworkGraph) you can find it.
 
 ```javascript
 writeToJSON(graph.graph, "graph");
 ```
 
 Pretty cool, right?
+
+## Visualise the Network!
 
 If you want to see the result, just push the button and check how the result looks like.
 
@@ -166,7 +169,7 @@ If you want to see the result, just push the button and check how the result loo
     <script src="index.js"></script>
   </div>
 
-As a next step, you should run the network generator. It generates random networks with up to 150 users.
+As a next step, you should run another helper function - the network generator. It generates random networks with up to 150 users.
 
 ```javascript
 generateRandomNetwork(graph, 10);
@@ -174,7 +177,7 @@ generateRandomNetwork(graph, 10);
 writeToJSON(graph.graph, "graph");
 ```
 
-Play around with the number of participants. You will see, with increasing network size it becomes quickly very complicated to keep an overview by just looking at the JSON object. For a better overview, you can drop the JSON file in the visualiser as well.
+Play around with the number of participants. You will see, with increasing network size it becomes quickly very complicated to keep an overview by just looking at the JSON object. For a better overview, you can drop the JSON object in the visualiser as well.
 
 ## Conclusion
 
