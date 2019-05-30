@@ -116,6 +116,11 @@ $carousel-control-width: 6%;
 @import "cookie-notice";
 @import "graph-visualiser";
 
+.logo {
+  height: 20px;
+  margin-top: 3px;
+}
+
 .related-post-parent {
   &:chi {
     margin: 0.1rem;
