@@ -31,7 +31,7 @@ Now, after having thought of the basic interaction of users in social networks, 
 
 Simply put, graphs are nothing but a collection of nodes and edges which connect them. In the books, you find nodes often also called vertices. In general, nodes can represent any kind of abstract data object. In the context of a social network, it's obvious to represent users by nodes. But also other abstract entities like groups, companies, events, etc. can be modeled as nodes.
 
-The connections between nodes are called Edges. It exists a range of different types of edges, which allow you to model all kinds of relations between nodes. Read the article _Graph Data Structures for Beginners_ by [@amejiarosario](www.twitter.com/amejiarosario) to learn more about the differences between directed, undirected, cyclic and acyclic graphs. You find the link in the [resources section](#resources).
+The connections between nodes are called Edges. It exists a range of different types of edges, which allow you to model all kinds of relations between nodes. Read the article _Graph Data Structures for Beginners_ by [@amejiarosario](https://twitter.com/amejiarosario) to learn more about the differences between directed, undirected, cyclic and acyclic graphs. You find the link in the [resources section](#resources).
 
 What do you think? Sounds promising, right? Let's dive right into building a graph and see if it's actually as good.
 
